@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    fstream fin;
+    fin.open("EnglishDictionary.csv");
+    while(!fin.eof()){
+        fin>>line;
+        string str;
+        stringstream s(line);
+        s>>str;
+        cout<<str;
+    }
+}
